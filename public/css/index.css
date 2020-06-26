@@ -1,0 +1,421 @@
+@font-face{
+    font-family: 'Maven Pro';
+    src: url('../font/MavenPro-Regular.ttf');
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0; 
+    width: 100vw;
+
+    box-sizing: border-box;
+    
+    font-family: 'Maven Pro', sand-serif;
+    background: linear-gradient(90deg, #723230 0%, #0a588f 100%);
+    color: white;
+    
+}
+
+/* Nav Bar */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;    
+    font-size: 1.25em;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.header-expanded{
+    height: 8em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3em;
+    width: 70%;
+    max-width: 1000px;
+}
+
+nav > #nav-brand-container{
+    display: flex;
+    align-items: center;
+}
+
+#nav-brand-container > #cueboom-logo{
+    height: 2em;
+}
+
+
+header a{
+    all: unset;
+    padding: 0 1em;
+    color: white;
+}
+
+header a:hover{
+    color: rgba(280, 280, 280, .5);
+}
+
+header a:visited{
+    color: white;
+}
+
+#nav-hamburger{
+    display: none;
+    padding: 10px;
+    border: solid rgba(280, 280, 280, .8) 1px;
+    border-radius: .2em;
+}
+
+#nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 5em;
+    width: 100vw;
+}
+
+.nav-links-mobile-display{
+     display: none !important;
+}
+
+/* ./Nav Bar */
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 5vh;
+}
+
+
+
+#splashPage-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 100%;
+}
+
+#splashPage-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 80vh;
+
+    letter-spacing: .1em;
+}
+
+#splashPage-header{
+    font-size: 6em;
+    letter-spacing: .5em;
+}
+
+
+#splashPage-description{
+    font-size: 3em;
+}
+
+/* Demos */
+
+#cueboom-demos{
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100vw; 
+    padding: 10vh 0;
+}
+
+.cueboom-demos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 55vh;
+}
+
+#cueboom-demos-queue{
+    order: 1;
+}
+#cueboom-demos-welcome{
+    order: 2;
+}
+
+#cueboom-demos-search{
+  order: 3;  
+}
+
+
+
+.cueboom-demos-img{
+    height: 50vh;
+}
+
+/* ./Demos */
+
+
+
+
+/* Footer */
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 5em;
+
+    background-color: black;
+    color: white;
+}
+
+/* ./Footer */
+
+
+/* Response Landings */
+
+#response-body{
+    height: 100vh;
+}
+
+#response-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 70%;
+
+    background: white;
+    border-radius: 1em;
+}
+
+#response-container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 60%;   
+}
+
+
+#response-img{
+    display: none;
+
+    height: 100%;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.rotate{
+    transform: rotate(-50deg);
+}
+
+
+#response-container{
+    align-self: center;
+    text-align: center;
+
+    height: 70vh;
+    margin: 5vh;
+}
+
+#response-container-content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 50%;
+}
+
+#response-container-content-text h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#response-container-content-text  p {
+    color: black;
+    padding: .5em 0;
+}
+
+#response-container-content-text span{
+    background: -webkit-linear-gradient(90deg,#ff0800, #0598ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+   }
+
+
+#success-text{
+    color: #5fff00ff;
+}
+
+#failure-text{
+    color: red;
+}
+
+/* ./Response Landings */
+
+/* Tablet Styling */
+
+@media only screen and (max-width: 768px) and (min-width: 451px){
+    nav{
+        width: 90%
+    }
+
+    #splashPage-text{
+        height: 80vh;
+        text-align: center;
+    }
+
+    #splashPage-header{
+        font-size: 4em;
+    }
+    
+    
+    #splashPage-description{
+        font-size: 2em;
+    }
+
+    #cueboom-demos{
+        flex-direction: column;
+        
+        padding: 20vh 0;
+    }
+
+    .cueboom-demos-container{
+        flex-direction: row;
+        
+        font-size: 2em;
+    }
+
+    #cueboom-demos-queue{
+        order: 2;
+        flex-direction: row-reverse;
+    }
+    #cueboom-demos-welcome{
+        order: 1;
+        
+    }
+    
+    #cueboom-demos-search{
+      order: 3;  
+    }
+    
+    #response-container{
+        height: 70vh;
+        width: 80%;
+        margin: 5vh;
+        text-align: center;
+    }
+
+    #response-container-content-text{
+        justify-content: space-evenly;
+        
+        height: 100%;
+        margin: 0 1em;
+    }
+}
+
+/* ./Tablet Styling */
+
+
+/* Mobile Styling */
+
+@media only screen and (max-width: 450px){
+  
+    
+
+    nav{
+        width: 90%;
+    }
+
+    #nav-links-desktop{
+        display: none;
+    }
+
+    #nav-hamburger{
+        display: unset;
+    }
+
+
+    #splashPage-text{
+        justify-content: center; 
+        text-align: center;
+
+        height: 70vh;
+    }
+
+    #splashPage-header{
+        font-size: 4em;
+        margin-bottom: 1rem;
+    }
+
+    #splashPage-description{
+        font-size: 1em;
+    }
+
+   #cueboom-demos{
+       flex-direction: column;
+       padding-top: 10vh;
+   }
+
+
+   .cueboom-demos-container{
+       margin-bottom: 5vh;
+   }
+
+   #cueboom-demos-queue{
+        order: 2;
+    }
+    #cueboom-demos-welcome{
+        order: 1; 
+    }
+
+    #cueboom-demos-search{
+        order: 3;  
+    }
+
+   
+   #response-section{
+       height: calc(100vh - 8em);
+   }
+
+   #response-container{
+       height: 67vh;
+       margin: 10vh 0;
+       width: 90%;
+   }
+
+   #response-container-content{
+        text-align: center;
+        width: 90%;  
+   }
+}
+
+/* ./Mobile Styling */
+
+

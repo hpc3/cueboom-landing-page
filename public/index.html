@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Icon for Mobile Nav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <title>cueBoom</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="nav-brand-container">
+                <img src="assets/cueboom-logo.png" id="cueboom-logo" alt="cueBoom Logo">
+                <a id="home" href="index.html">cueBoom</a>
+            </div>
+            <div id="nav-links-desktop">
+                <a>Home</a>
+                <a href="#cueboom-demos">About</a>
+            </div>
+
+            <i id="nav-hamburger" class="fa fa-bars"></i>
+        </nav>
+
+        <div id="nav-links-mobile" class="nav-links-mobile-display">
+            <a>Home</a>
+            <a id="about" href="#cueboom-demos">About</a>
+        </div>
+
+    </header>
+
+
+    <section>
+        <div id="splashPage-wrapper">
+            <div id="splashPage-text">
+                <h1 id="splashPage-header">cueBoom</h1>
+                <h2 id="splashPage-description">Queuing Songs Just Got Easier</h2>
+            </div>
+
+            <div id="cueboom-demos">
+                <div class="cueboom-demos-container" id='cueboom-demos-queue'>
+                    <img class="cueboom-demos-img" src='assets/cueboom-que.svg' alt="cueBoom's queue page">
+                    <p>Manage Requests</p>
+                </div>
+                <div class="cueboom-demos-container" id="cueboom-demos-welcome">
+                    <img class="cueboom-demos-img" src='assets/cueboom-welcome.svg' alt="cueBoom App Homepage">
+                    <p>Welcome to the cue</p>
+                </div>
+                <div class="cueboom-demos-container" id="cueboom-demos-search" >
+                    <img class="cueboom-demos-img" src='assets/cueboom-find-a-song.svg' alt="cueBoom's Find A Song page">
+                    <p>Search Popular Songs</p>
+                </div>
+       
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 CueBoom LLC</p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
