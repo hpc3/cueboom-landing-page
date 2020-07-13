@@ -3,6 +3,11 @@
     src: url('../font/MavenPro-Regular.ttf');
 }
 
+/* Not compatable with all browsers */
+/* html{
+    scroll-behavior: smooth;
+} */
+
 body{
     display: flex;
     flex-direction: column;
@@ -152,6 +157,10 @@ section{
     height: 55vh;
 }
 
+.cueboom-demos-container > p{
+    font-size: 1.25em;
+}
+
 #cueboom-demos-queue{
     order: 1;
 }
@@ -170,6 +179,244 @@ section{
 }
 
 /* ./Demos */
+
+
+/* About Us */
+
+.hidden{
+    opacity: 0;
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.slideDown{
+    animation: slideDown 3s ease-in-out  forwards ;
+}
+
+
+@keyframes fadeIn {
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+.fadeIn{
+    animation: fadeIn 5s;
+}
+
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(-50%);
+    }
+
+
+    to{
+        transform: translateX(0);
+    }
+
+}
+
+.slideLeft{
+    animation: slideLeft 2s;
+}
+
+@keyframes slideRight{
+    from{
+        transform: translateX(50%);
+    }
+
+
+    to{
+        transform: translateX(0);
+    }
+
+}
+
+.slideRight{
+    animation: slideRight 2s;
+}
+
+
+
+
+
+
+
+#about-us{
+    padding: 0;
+    background-color: white;
+
+    display: flex;
+    height: 100vh;
+ 
+}
+
+
+#about-us-wrapper{
+    height: 80%;
+    width: 80%;
+    max-width: 1000px;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+
+#about-us-heading-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 40%;
+    justify-content: space-between;
+
+    text-align: center;
+
+
+}
+
+
+
+#about-us-heading-wrapper > h2{
+    color: black;
+
+    margin-top: 5vh;
+    font-size: 3em;
+
+    font-weight: 500;
+}
+
+
+#about-us-heading-wrapper > h3{
+    color: black;
+    font-size: 2.5em;
+
+    font-weight: 100;
+}
+
+#about-us-heading-wrapper > hr{
+    width: 35%;
+    height: 5px;
+    
+
+    background: linear-gradient(90deg, #723230 0%, #0a588f 100%);
+
+    border-style: solid;
+}
+
+
+
+#about-us-content-wrapper{
+    color: rgb(105, 105, 105);
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.about-us-content{
+    width: 45%;
+}
+
+
+
+/* ./About Us */
+
+
+
+
+/* Contact Us */
+
+
+
+@keyframes contact-us-slide-down{
+    from{
+        transform: translateY(-25%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+
+}
+
+
+.contact-us-slide-down{
+    animation: contact-us-slide-down 3s ease-in-out;
+}
+
+
+
+#contact-us{
+    height: 50vh;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+
+#contact-us > h1{
+    font-size: 3em;
+}
+
+
+#contact-us-card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 80%;
+    width: 90%;
+    max-width: 1000px;
+
+}
+
+
+.contact-us-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 50%;
+    justify-content: center;
+}
+
+.contact-us-card > a{
+    text-decoration: unset;
+    color: white;
+}
+
+.contact-us-card-img{
+    height: 4em;
+}
+
+
+/* Contact Us */
+
 
 
 
@@ -281,7 +528,7 @@ footer{
 
 /* Tablet Styling */
 
-@media only screen and (max-width: 768px) and (min-width: 451px){
+@media only screen and (max-width: 768px) and (min-width: 620px){
     nav{
         width: 90%
     }
@@ -341,6 +588,42 @@ footer{
 }
 
 /* ./Tablet Styling */
+
+
+
+@media only screen and (max-width: 620px){
+
+
+
+    #about-us-wrapper{
+        height: 90%;
+        justify-content: space-around;
+    }
+
+    /* #about-us > h3{
+        font-size: 1.5em;
+    } */
+
+    #about-us-content-wrapper{
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: space-around;
+        height: 55%;
+
+
+    }
+
+
+
+    .about-us-content{
+        width:100%;
+    }
+
+
+
+}
+
 
 
 /* Mobile Styling */
